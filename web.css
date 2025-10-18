@@ -1,15 +1,14 @@
-/* Global base styles (safe) */
 body {
   text-align: center;
   color: #000;
 }
 
-/* Left-align lists while keeping overall centered text */
+
 ul, ol {
   text-align: left;
-  display: inline-block; /* so lists still appear visually centered on the page */
-  margin-left: 0; /* reset default margins so inline-block centers nicely */
-  padding-left: 1.2rem; /* keep bullets/nums readable */
+  display: inline-block; 
+  margin-left: 0; /
+  padding-left: 1.2rem; 
 }
 
 li {
@@ -21,7 +20,7 @@ p {
   color: #000;
 }
 
-/* Example classes/IDs fixed for syntax correctness */
+
 .id {
   margin-bottom: 15px;
 }
@@ -42,33 +41,33 @@ p {
 }
 
 a {
-  color: #005fcc; /* high-contrast blue on light gray */
+  color: #005fcc; 
 }
 
 a:visited {
-  color: #4b0082; /* indigo for visited links */
+  color: #4b0082; 
 }
 
 a:hover,
 a:focus {
-  color: #003a80; /* darker on hover/focus */
+  color: #003a80; 
   text-decoration: underline;
 }
 
-/* Make all headings bold and black */
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: #000;
 }
 
-/* Styles specific to Website.html */
+
 .page-website {
   font-family: Arial, sans-serif;
   margin: 40px;
   background: #c4c2c2;
 }
 
-/* Tab UI extracted from Website.html */
+
 .tab {
   overflow: hidden;
   border-bottom: 2px solid #000000;
