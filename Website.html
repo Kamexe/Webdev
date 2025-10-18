@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webpage Thing</title>
+  <link rel="stylesheet" href="web.css">
+</head>
+<body class="page-website">
+
+  <h1>CIS 111 - Website Project
+  </h1>
+
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
+    <button class="tablinks" onclick="openTab(event, 'Braincell')">Braincell</button>
+    <button class="tablinks" onclick="openTab(event, 'Assignment Progression')">Assignment Progression</button>
+  </div>
+
+  <div id="Home" class="tabcontent">
+    <p>Homepage, I guess.</p>
+   
+  </div>
+
+  <div id="Braincell" class="tabcontent">
+    <h2>Braincell</h2>
+    <p>Literally, my one braincell.</p>
+  </div>
+
+  <div id="Assignment Progression" class="tabcontent">
+    <h2>Assignment Progression</h2>
+    <header>
+      <h1>The progression of my assignments</h1>
+    </header>
+    <main>
+      <h2>This is the start of my assignments, it's janky.</h2>
+      <p> This is a test page. Kind of, it became more like a diary of the progression of this site. </p>
+      <p>I tried to log everything I did while I progressed it. I guess it kind of worked. </p>
+      <p> Today is 10/4/25</p>
+      <p> I am using Visual Studio Code to make these since it's easier to read. Apparently the more spread out an HTML thing is, the larger the file becomes. But at least it's more legible.</p>
+      <header> Today is 10/3/25 </header>
+      <ul>
+          <li> Github took 5 minutes to redeploy my original edits.</li>
+          <li> So I'm trying this to see if it'll redeploy</li>
+          <li> If you're reading this it means that it decided to work.</li>
+          <li> In which case... yippee.</li>
+      </ul>
+  
+      <img src="Suffering.jpg" alt="I'm not actually sure what happened here or why it took so long, I cancelled it and then tried again and I guess it was okay.">
+  
+      <p> This part of Week 3 assignment they wanted me to add an embed link so I used the song I was listening to at the time to link because I couldn't really think of anything else to add..</p>
+      <p> The song I had been listening to was Warcry by Chase Atlantic. Released on October 3rd, 2025. It had just come out at the time of writing this.</p>
+      <p>
+          <a href="https://youtu.be/w03hq-Ok1DE" target="_blank" rel="noopener noreferrer" title="Warcry by Chase Atlantic" aria-label="Warcry">
+          Open Warcry (Explicit) on YouTube
+          </a>
+      </p>
+    </main>
+
+<p> Today is 10/15/25 And we're starting CSS. And stuff for our final project. So I changed a bunch of things.
+    <ul>
+        <li> First of all, I made it multi tabbed for the final project work with help of AI.</li>
+        <li> Then I used that code to make a base layout for the website. It's still pretty mid.</li>
+        <li> I actually changed the html file from the original index.html cause I forgot what I had done with it and figured it would just be easier to move it to a tab with the template I had made.</li>
+        <li> Edited some colors, moved the other stuff, deleted the old html. Hopefully github doesn't have a panic attack.</li>
+        <li> I added basic things and moved things to this tab and will have to go back and think of what stuff to fill the other ones with.</li>
+        <li> I have no idea where I'm supposed to use the stylesheet rather than the web.css file but I guess I'll figure it out.</li>
+        <li> I'm kind of trying to get everything done since I have work Thursday and Friday. And I won't be in class either days next week cause Justin scheduled me to work both those days. LOL.</li>
+        <li> I'm kind of stressing out between working and my assignments for both my classes. Everything is getting busier and I am stressed.</li>
+    </ul>
+</p>
+
+  </div>
+
+  <footer>&copy; Copyright 2025 Kam.exe</footer>
+
+  <script>
+    function openTab(evt, tabName) {
+      // Hide all tab content
+      const tabcontent = document.getElementsByClassName("tabcontent");
+      for (let i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      // Remove "active" class from all buttons
+      const tablinks = document.getElementsByClassName("tablinks");
+      for (let i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      // Show selected tab and mark button as active
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    // Automatically open the first tab when the page loads
+    document.getElementById("defaultOpen").click();
+  </script>
+
+</body>
+</html>

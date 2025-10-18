@@ -1,26 +1,99 @@
-body { 
-  background: #FFF 
-  text-align: center; 
+/* Global base styles (safe) */
+body {
+  text-align: center;
+  color: #000;
 }
-p { 
-  font: normal 18px/1.6 "Helvetica", Arial, sans-serif; 
-  color: #464646; 
-}
-.id { 
-  margin-bottom 15px; 
-}
-#class { 
-  line-height: 1.1; 
-  font-family: "Roboto Slab, serif'; 
-  font-weight: 300; 
-}
-#img { 
-  border: none 
-}
-.org { 
-  color: #54ba6a; 
-  text-decoration: underline; 
 
-a { 
-  color: #68c6b8; 
+/* Left-align lists while keeping overall centered text */
+ul, ol {
+  text-align: left;
+  display: inline-block; /* so lists still appear visually centered on the page */
+  margin-left: 0; /* reset default margins so inline-block centers nicely */
+  padding-left: 1.2rem; /* keep bullets/nums readable */
+}
+
+li {
+  text-align: left;
+}
+
+p {
+  font: normal 18px/1.6 "Helvetica", Arial, sans-serif;
+  color: #000;
+}
+
+/* Example classes/IDs fixed for syntax correctness */
+.id {
+  margin-bottom: 15px;
+}
+
+#class {
+  line-height: 1.1;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+}
+
+#img {
+  border: none;
+}
+
+.org {
+  color: #54ba6a;
+  text-decoration: underline;
+}
+
+a {
+  color: #005fcc; /* high-contrast blue on light gray */
+}
+
+a:visited {
+  color: #4b0082; /* indigo for visited links */
+}
+
+a:hover,
+a:focus {
+  color: #003a80; /* darker on hover/focus */
+  text-decoration: underline;
+}
+
+/* Make all headings bold and black */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #000;
+}
+
+/* Styles specific to Website.html */
+.page-website {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background: #c4c2c2;
+}
+
+/* Tab UI extracted from Website.html */
+.tab {
+  overflow: hidden;
+  border-bottom: 2px solid #000000;
+}
+
+.tab button {
+  background-color: #bebebe;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: #73ccff;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 20px;
+  border: 1px solid #000000;
+  border-top: none;
 }
