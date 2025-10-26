@@ -7,7 +7,7 @@ body {
 ul, ol {
   text-align: left;
   display: inline-block; 
-  margin-left: 0; /
+  margin-left: 0;
   padding-left: 1.2rem; 
 }
 
@@ -95,4 +95,92 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px;
   border: 1px solid #000000;
   border-top: none;
+}
+
+
+[id="Fugly Webpage"] * {
+  margin: 0;
+  padding: 0;
+}
+[id="Fugly Webpage"] {
+  width: 80%;
+  background-color: #ff00cc;
+  margin: 25px auto;
+
+  border-top: 15px solid lime;
+  border-right: 15px dashed cyan;
+  border-bottom: 15px double yellow;
+  border-left: 15px groove magenta;
+
+  outline: 6px dotted chartreuse;
+  box-shadow: 0 0 0 8px hotpink inset, 0 0 8px 2px lime;
+  animation: fuglyBorderPulse 6s linear infinite;
+}
+[id="Fugly Webpage"] header {
+  background-color: #ffa500;
+
+  border-bottom: 12px double #ffff00;
+  outline: 4px dashed red;
+}
+[id="Fugly Webpage"] h2 {
+  padding: 1em;
+}
+[id="Fugly Webpage"] main {
+  height: auto; /
+  width: 100%;
+  float: left;
+  border-right: 2px solid #00ff00;
+  background-color: orange;
+
+  border-left: 6px dotted #0000ff;
+  outline: 3px solid #ff69b4;
+}
+[id="Fugly Webpage"] aside {
+  width: 25%;
+  height: 600px;
+  float: right;
+
+  border: 5px groove #ff0000;
+  border-left: 10px dashed #000000;
+  background-color: #00ff7a;
+  outline: 4px double #00ffff;
+}
+[id="Fugly Webpage"] footer {
+  clear: both;
+
+  border-top: 14px dotted fuchsia;
+  border-right: 10px solid #ff8c00;
+  border-left: 8px dashed #9400d3;
+  background-color: #808000;
+  outline: 4px groove #7fff00;
+}
+
+
+@keyframes fuglyBorderPulse {
+  0% {
+    outline-color: #ff00cc;
+    box-shadow: 0 0 0 8px hotpink inset, 0 0 8px 2px lime;
+  }
+  25% {
+    outline-color: #00ffff;
+    box-shadow: 0 0 0 8px cyan inset, 0 0 8px 2px yellow;
+  }
+  50% {
+    outline-color: #ffff00;
+    box-shadow: 0 0 0 8px yellow inset, 0 0 8px 2px magenta;
+  }
+  75% {
+    outline-color: #ff0000;
+    box-shadow: 0 0 0 8px red inset, 0 0 8px 2px aqua;
+  }
+  100% {
+    outline-color: #ff00cc;
+    box-shadow: 0 0 0 8px hotpink inset, 0 0 8px 2px lime;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [id="Fugly Webpage"] {
+    animation: none;
+  }
 }
