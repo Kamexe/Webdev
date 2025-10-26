@@ -97,7 +97,6 @@ h1, h2, h3, h4, h5, h6 {
   border-top: none;
 }
 
-
 [id="Fugly Webpage"] * {
   margin: 0;
   padding: 0;
@@ -114,12 +113,10 @@ h1, h2, h3, h4, h5, h6 {
 
   outline: 6px dotted chartreuse;
   box-shadow: 0 0 0 8px hotpink inset, 0 0 8px 2px lime;
-  animation: fuglyBorderPulse 6s linear infinite;
 }
-
 [id="Fugly Webpage"] header {
   background-color: #ffa500;
-
+ 
   border-bottom: 12px double #ffff00;
   outline: 4px dashed red;
 }
@@ -127,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1em;
 }
 [id="Fugly Webpage"] main {
-  height: auto; /
+  height: auto; 
   width: 100%;
   float: left;
   border-right: 2px solid #00ff00;
@@ -140,7 +137,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 25%;
   height: 600px;
   float: right;
-
   border: 5px groove #ff0000;
   border-left: 10px dashed #000000;
   background-color: #00ff7a;
@@ -148,7 +144,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 [id="Fugly Webpage"] footer {
   clear: both;
-
+ 
   border-top: 14px dotted fuchsia;
   border-right: 10px solid #ff8c00;
   border-left: 8px dashed #9400d3;
@@ -156,3 +152,60 @@ h1, h2, h3, h4, h5, h6 {
   outline: 4px groove #7fff00;
 }
 
+/* --- Two-column TEXT flow for Fugly main content --- */
+[id="Fugly Webpage"] main.two-col-text {
+  /* Keep requirement: exactly two columns */
+  column-count: 2;
+  /* Make it intentionally awkward */
+  column-gap: 3rem; /* overly wide gap */
+  column-rule: 8px dashed #39ff14; /* neon dashed divider */
+  text-align: justify; /* forced justification creates rivers */
+  text-justify: inter-word;
+  letter-spacing: 0.03em; /* slightly off spacing */
+  word-spacing: 0.25em;   /* exaggerated word spacing */
+  line-height: 1.2;       /* a bit cramped */
+  hyphens: none;          /* avoid neat hyphenation */
+  overflow-wrap: anywhere;/* awkward breaks on long words */
+
+  /* Loud, clashing gradients per column (left/right) */
+  background:
+    linear-gradient(135deg, #ff00cc 0%, #ffea00 100%) left / 50% 100% no-repeat,
+    linear-gradient(225deg, #00ffff 0%, #ff6a00 100%) right / 50% 100% no-repeat,
+    repeating-linear-gradient(90deg,
+      rgba(255,255,255,0) 0 8px,
+      rgba(255,255,255,0.18) 8px 16px
+    ); /* faint stripes for extra clash */
+  padding: 12px; /* give the backgrounds some room */
+}
+
+/* Extra chaotic headings only inside the two-column main area */
+[id="Fugly Webpage"] main.two-col-text h2 {
+  transform: rotate(-1.5deg);
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  background: linear-gradient(90deg, #ffff00, #ff00ff);
+  box-shadow: 3px 3px 0 #00ffee;
+}
+
+/* Avoid awkward splits across columns */
+[id="Fugly Webpage"] main.two-col-text h2,
+[id="Fugly Webpage"] main.two-col-text img,
+[id="Fugly Webpage"] main.two-col-text ul,
+[id="Fugly Webpage"] main.two-col-text li {
+  break-inside: avoid;
+}
+
+[id="Fugly Webpage"] main.two-col-text img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 0 0.75rem 0;
+}
+
+/* Stack to one column on smaller screens */
+@media (max-width: 800px) {
+  [id="Fugly Webpage"] main.two-col-text {
+    column-count: 1;
+  }
+}
