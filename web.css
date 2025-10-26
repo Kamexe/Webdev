@@ -116,6 +116,7 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 0 0 8px hotpink inset, 0 0 8px 2px lime;
   animation: fuglyBorderPulse 6s linear infinite;
 }
+
 [id="Fugly Webpage"] header {
   background-color: #ffa500;
 
@@ -155,32 +156,3 @@ h1, h2, h3, h4, h5, h6 {
   outline: 4px groove #7fff00;
 }
 
-
-@keyframes fuglyBorderPulse {
-  0% {
-    outline-color: #ff00cc;
-    box-shadow: 0 0 0 8px hotpink inset, 0 0 8px 2px lime;
-  }
-  25% {
-    outline-color: #00ffff;
-    box-shadow: 0 0 0 8px cyan inset, 0 0 8px 2px yellow;
-  }
-  50% {
-    outline-color: #ffff00;
-    box-shadow: 0 0 0 8px yellow inset, 0 0 8px 2px magenta;
-  }
-  75% {
-    outline-color: #ff0000;
-    box-shadow: 0 0 0 8px red inset, 0 0 8px 2px aqua;
-  }
-  100% {
-    outline-color: #ff00cc;
-    box-shadow: 0 0 0 8px hotpink inset, 0 0 8px 2px lime;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  [id="Fugly Webpage"] {
-    animation: none;
-  }
-}
