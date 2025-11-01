@@ -1,4 +1,4 @@
-/* Global fluid defaults */
+/*converting to fluid*/
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -6,7 +6,6 @@
 body {
   text-align: center;
   color: #000;
-  /* Prevent overflow on long words/URLs */
   overflow-wrap: anywhere;
 }
 
@@ -70,14 +69,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .page-website {
   font-family: Arial, sans-serif;
-  /* Scale margins with viewport while keeping reasonable bounds */
+
   margin: clamp(12px, 4vw, 40px);
   background: #c4c2c2;
 }
 
 
 .tab {
-  /* Let tab buttons wrap on small screens */
+
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -91,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   padding: 10px 20px;
   transition: 0.3s;
-  flex: 0 1 auto; /* allow buttons to shrink and wrap */
+  flex: 0 1 auto; 
 }
 
 .tab button:hover {
@@ -122,11 +121,12 @@ iframe {
   max-width: 100%;
 }
 
-/* Small screen tweaks */
+/*fluid*/
 @media (max-width: 600px) {
   .tab button {
     padding: 8px 12px;
   }
 }
+
 
 
