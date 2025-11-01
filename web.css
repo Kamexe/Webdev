@@ -1,6 +1,13 @@
+/* Global fluid defaults */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   text-align: center;
   color: #000;
+  /* Prevent overflow on long words/URLs */
+  overflow-wrap: anywhere;
 }
 
 
@@ -63,13 +70,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .page-website {
   font-family: Arial, sans-serif;
-  margin: 40px;
+  /* Scale margins with viewport while keeping reasonable bounds */
+  margin: clamp(12px, 4vw, 40px);
   background: #c4c2c2;
 }
 
 
 .tab {
-  overflow: hidden;
+  /* Let tab buttons wrap on small screens */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
   border-bottom: 2px solid #000000;
 }
 
@@ -80,6 +91,7 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   padding: 10px 20px;
   transition: 0.3s;
+  flex: 0 1 auto; /* allow buttons to shrink and wrap */
 }
 
 .tab button:hover {
@@ -92,9 +104,29 @@ h1, h2, h3, h4, h5, h6 {
 
 .tabcontent {
   display: none;
-  padding: 20px;
+  /* Fluid padding */
+  padding: clamp(12px, 3vw, 20px);
   border: 1px solid #000000;
   border-top: none;
+  max-width: 100%;
 }
 
-/* Removed old Fugly tab styles */
+/* Make media responsive */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+/* Small screen tweaks */
+@media (max-width: 600px) {
+  .tab button {
+    padding: 8px 12px;
+  }
+}
+
+
