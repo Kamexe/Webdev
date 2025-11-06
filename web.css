@@ -129,4 +129,34 @@ iframe {
 }
 
 
+/* Current Hyperfixations tab: background image + white text */
+[id="Current Hyperfixations"] {
+  background-image: url('Test-Sand-Page.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Keep content readable edge-to-edge */
+  min-height: 50vh;
+}
+
+[id="Current Hyperfixations"] h1,
+[id="Current Hyperfixations"] h2,
+[id="Current Hyperfixations"] h3,
+[id="Current Hyperfixations"] h4,
+[id="Current Hyperfixations"] h5,
+[id="Current Hyperfixations"] h6,
+[id="Current Hyperfixations"] p,
+[id="Current Hyperfixations"] li,
+[id="Current Hyperfixations"] header,
+[id="Current Hyperfixations"] a {
+  color: #ffffff;
+}
+
+[id="Current Hyperfixations"] a:hover,
+[id="Current Hyperfixations"] a:focus {
+  color: #e6e6e6;
+  text-decoration: underline;
+}
+
+
 
