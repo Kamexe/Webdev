@@ -148,8 +148,32 @@ iframe {
 [id="Current Hyperfixations"] p,
 [id="Current Hyperfixations"] li,
 [id="Current Hyperfixations"] header,
+[id="Current Hyperfixations"] label,
 [id="Current Hyperfixations"] a {
   color: #ffffff;
+}
+
+[id="Current Hyperfixations"] select {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 2px solid #ffffff;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+[id="Current Hyperfixations"] select option {
+  background-color: #333;
+  color: #ffffff;
+}
+
+[id="Current Hyperfixations"] .hyperfixation-content {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
 }
 
 [id="Current Hyperfixations"] a:hover,

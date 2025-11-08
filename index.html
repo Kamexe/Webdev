@@ -28,13 +28,22 @@
     <h3> I'm hyperfixation prone.</h3>
     </header>
      
- <p> Chase Atlantic.</p>
- <p> Placeholder </p>
+    <label for="hyperfixation-select">Choose a hyperfixation:</label>
+    <select id="hyperfixation-select" name="hyperfixations">
+      <option value="">--Select--</option>
+      <option value="chase-atlantic">Chase Atlantic</option>
+      <option value="love-deepspace">Love And Deepspace</option>
+    </select>
 
-    <p> Love And Deepspace</p>
-    <p> Placeholder </p>
+    <div id="chase-atlantic" class="hyperfixation-content" style="display:none;">
+      <p> Chase Atlantic.</p>
+      <p> Placeholder </p>
+    </div>
 
-    
+    <div id="love-deepspace" class="hyperfixation-content" style="display:none;">
+      <p> Love And Deepspace</p>
+      <p> Placeholder </p>
+    </div>
 
   </div>
 
@@ -116,6 +125,24 @@
 
     
     document.getElementById("defaultOpen").click();
+
+    // Hyperfixation dropdown functionality
+    const hyperfixationSelect = document.getElementById("hyperfixation-select");
+    if (hyperfixationSelect) {
+      hyperfixationSelect.addEventListener("change", function() {
+        // Hide all hyperfixation content
+        const contents = document.getElementsByClassName("hyperfixation-content");
+        for (let i = 0; i < contents.length; i++) {
+          contents[i].style.display = "none";
+        }
+        
+        // Show selected content
+        const selectedValue = this.value;
+        if (selectedValue) {
+          document.getElementById(selectedValue).style.display = "block";
+        }
+      });
+    }
   </script>
 
 </body>
