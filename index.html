@@ -18,8 +18,12 @@
   </div>
 
   <div id="Home" class="tabcontent">
-    <p>This my website for CIS 155. It's just the progression of my assignments and projects throughout the course. It's going to be mid.</p>
-   
+    <header>This my website for CIS 155. It will show the evolution of my webpage throughout the quarter.</header>
+   <h1> About Me:</h1>
+   <p> My name is Kam and this is my website, I can't say there's much of interest here since this is my first time actually doing something like this.</p>
+<p> This site is just kind of a diary tracking my progress throughout the class so I know what I'm doing since I can't work on it everyday since I work in pharmacy and have long hours.</p>
+<p> Hopefully, working on it I don't break things in the process, that's happened a few times.</p>
+<p> Consider this like a diary or just an excuse to yap about things that interest me without having to worry about being annoying. Cause no one else has to read it.</p>    
   </div>
 
   <div id="Current Hyperfixations" class="tabcontent">
@@ -37,27 +41,25 @@
     </select>
 
     <div id="chase-atlantic" class="hyperfixation-content" style="display:none;">
-      <p> Chase Atlantic.</p>
-      <p> I've been listening to them for... oh god, like over 10 years now. </p>
+      <header> Chase Atlantic.</header>
+      <p> I've been listening to them for... over 10 years now. I've seen them in concert a few times too. Most of their music is marked as explicit. </p>
     </div>
 
     <div id="love-deepspace" class="hyperfixation-content" style="display:none;">
-      <p> Love And Deepspace</p>
-      <p> Been playing this for a little over a year now. I might be a gacha addict. </p>
+      <header> Love And Deepspace</header>
+      <p> Been playing this for a little over a year now. I don't recommend it for most people, but I got invested in the lore. </p>
     </div>
 
     <div id="video-games" class="hyperfixation-content" style="display:none;">
-      <p> Video Games</p>
-      <p> I play a lot of PC games... But either hyperfocus on one single game, or can't stick to one at all. </p>
+      <header> Video Games</header>
+      <p> I play a lot of PC games... But either hyperfocus on one single PC game, or can't stick to one at all. </p>
     </div>
 
   <div id="Adobe" class="hyperfixation-content" style="display:none;">
-    <p> Adobe Software</p>
-    <p> I make videos in Adobe sometimes. </p>
+    <header> Adobe Software</header>
+    <p> I make videos in Adobe sometimes if I have a brainworm, then I'll hyper focus that until it's done. Or forget about it and never actually finish it. That happens too. </p>
   </div>
 
-
-  
   
   
   
@@ -110,7 +112,8 @@
  <p> On Thursday, my mom got scammed by a person impersonating the new pastor at church through email. That was kind of rough cause I was taking my midterm when my mom realized it and she and my dad argued for a long time about it. I WARNED HER that it was suspicious.</p>
  <p> I need a nap.</p>
 
-<p> 11/8/25: Okay, it's time to start on my final project template, like bare minimum for someone to be able to look at. I don't know what I'd write about so we're just going to make this however my brain will let me.</p>
+<p> 11/8/25: Okay, it's time to start on my final project template, like bare minimum for someone to be able to look at. I don't know what I'd write about, so we're just going to make this however my brain will let me.</p>
+<p> 11/9/25: I made my basic template, I don't know if it's weird if I do my project like this. But I can't really think of anything else since my brain is just full of hyper fixations right now. I think it's just how my brain is coping so I don't have another meltdown.</p>
 </div>
  
     <footer>&copy; Copyright 2025 Kam.exe</footer>
@@ -137,17 +140,17 @@
     
     document.getElementById("defaultOpen").click();
 
-    // Hyperfixation dropdown functionality
+  
     const hyperfixationSelect = document.getElementById("hyperfixation-select");
     if (hyperfixationSelect) {
       hyperfixationSelect.addEventListener("change", function() {
-        // Hide all hyperfixation content
+      
         const contents = document.getElementsByClassName("hyperfixation-content");
         for (let i = 0; i < contents.length; i++) {
           contents[i].style.display = "none";
         }
         
-        // Show selected content
+     
         const selectedValue = this.value;
         if (selectedValue) {
           document.getElementById(selectedValue).style.display = "block";

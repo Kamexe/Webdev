@@ -1,4 +1,4 @@
-/*converting to fluid*/
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -103,7 +103,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .tabcontent {
   display: none;
-  /* Fluid padding */
+
   padding: clamp(12px, 3vw, 20px);
   border: 1px solid #000000;
   border-top: none;
