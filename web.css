@@ -129,12 +129,8 @@ iframe {
 }
 
 
-/* Current Hyperfixations tab: background image + white text */
+/* Current Hyperfixations tab: white text styling */
 [id="Current Hyperfixations"] {
-  background-image: url('Test-Sand-Page.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   /* Keep content readable edge-to-edge */
   min-height: 50vh;
 }
@@ -150,35 +146,35 @@ iframe {
 [id="Current Hyperfixations"] header,
 [id="Current Hyperfixations"] label,
 [id="Current Hyperfixations"] a {
-  color: #ffffff;
+  color: #000000;
 }
 
 [id="Current Hyperfixations"] select {
   padding: 8px 12px;
   font-size: 16px;
-  border: 2px solid #ffffff;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: #ffffff;
+  border: 2px solid #000000;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000000;
   cursor: pointer;
   border-radius: 4px;
   margin: 10px 0;
 }
 
 [id="Current Hyperfixations"] select option {
-  background-color: #333;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 [id="Current Hyperfixations"] .hyperfixation-content {
   margin-top: 20px;
   padding: 15px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
 }
 
 [id="Current Hyperfixations"] a:hover,
 [id="Current Hyperfixations"] a:focus {
-  color: #e6e6e6;
+  color: #4982c8;
   text-decoration: underline;
 }
 
