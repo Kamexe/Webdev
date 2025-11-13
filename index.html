@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Webpage Thing</title>
   <link rel="stylesheet" href="web.css">
 </head>
+
 <body class="page-website">
 
   <h1>CIS 155 - Website Project
@@ -14,28 +16,32 @@
   <div class="tab">
     <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
     <button class="tablinks" onclick="openTab(event, 'Current Hyperfixations')">Hyperfixations</button>
-    <button class="tablinks" onclick="openTab(event, 'Assignment Progression')" id="tab-assignment">Assignment Progression</button>
+    <button class="tablinks" onclick="openTab(event, 'Assignment Progression')" id="tab-assignment">Assignment
+      Progression</button>
   </div>
 
   <div id="Home" class="tabcontent">
     <header>This my website for CIS 155. It will show the evolution of my webpage throughout the quarter.</header>
-   <h1> About Me:</h1>
-   <p> My name is Kam and this is my website, I can't say there's much of interest here since this is my first time actually doing something like this.</p>
-<p> This site is just kind of a diary tracking my progress throughout the class so I know what I'm doing since my memory is abysmal.</p>
-<p> Hopefully, breaking anything will be minimal or easily fixable.</p>
-<p> Consider this like a diary or just an excuse to yap about things that interest me without having to worry about being annoying since no one else has to read it.</p>  
-<p> Alternatively, consider it my way of autistic brain dumping so my brain is less obnoxious.</p>  
+    <h2> About Me:</h2>
+    <p> My name is Kam and this is my website, I can't say there's much of interest here since this is my first time
+      actually doing something like this.</p>
+    <p> This site is just kind of a diary tracking my progress throughout the class so I know what I'm doing since my
+      memory is abysmal.</p>
+    <p> Hopefully, breaking anything will be minimal or easily fixable.</p>
+    <p> Consider this like a diary or just an excuse to yap about things that interest me without having to worry about
+      being annoying since no one else has to read it.</p>
+    <p> Alternatively, consider it my way of autistic brain dumping so my brain is less obnoxious.</p>
   </div>
 
   <div id="Current Hyperfixations" class="tabcontent">
-   <header>
-    <h2> I was asked to add things that bring me joy.</h2>
-    <h3> But I'm mostly just hyperfixation prone so...</h3>
+    <header>
+      <h2> I was asked to add things that bring me joy.</h2>
+      <h3> But I'm mostly just hyper fixation prone so...</h3>
     </header>
-     
+
     <label for="hyperfixation-select">Pick your poison:</label>
     <select id="hyperfixation-select" name="hyperfixations">
-      <option value="">Click</option>
+      <option value="">--Click For Dropdown--</option>
       <option value="chase-atlantic">Chase Atlantic</option>
       <option value="love-and-deepspace">Love And Deepspace</option>
       <option value="video-games">Video Games</option>
@@ -43,118 +49,149 @@
     </select>
 
     <div id="chase-atlantic" class="hyperfixation-content" style="display:none;">
-      <header> Chase Atlantic.</header>
-      <p> I've been listening to them for... over 10 years now. I've seen them in concert a few times too. Most of their music is marked as explicit. </p>
+      <header> <strong>Chase Atlantic</strong></header>
+      <p> I've been listening to them for... over 10 years now. I've seen them in concert a few times too. Most of their
+        music is marked as explicit. </p>
     </div>
 
     <div id="love-and-deepspace" class="hyperfixation-content" style="display:none;">
-      <header> Love And Deepspace</header>
-      <p> Been playing this for a little over a year now. I don't recommend it for most people, but I got invested in the lore. I could yap about it for literally hours. </p>
+      <header> <strong>Love And Deepspace</strong></header>
+      <p> Been playing this for a little over a year now. I don't recommend it for most people, but I got invested in
+        the lore. I could yap about it for literally hours. </p>
     </div>
 
     <div id="video-games" class="hyperfixation-content" style="display:none;">
-      <header> Video Games</header>
-      <p> I play a lot of PC games... But either hyper focus on one single PC game, or can't stick to one at all. Right now I've been playing a lot of Battlefield 6. </p>
+      <header> <strong>Video Games</strong></header>
+      <p> I play a lot of PC games... But either hyper focus on one single PC game, or can't stick to one at all. Right
+        now I've been playing a lot of Battlefield 6. </p>
     </div>
 
     <div id="Adobe" class="hyperfixation-content" style="display:none;">
-      <header> Adobe Software</header>
-      <p> I make videos in Adobe sometimes if I have a brainworm, then I'll hyper focus that until it's done. Or forget about it and never actually finish it. Unfortunately, that happens a lot. </p>
+      <header> <strong>Adobe Software</strong></header>
+      <p> I make videos in Adobe sometimes if I have a brainworm, then I'll hyper focus that until it's done. Or forget
+        about it and never actually finish it. Unfortunately, that happens a lot. </p>
     </div>
   </div>
 
-  
-  
-  
+
+
+
   <div id="Assignment Progression" class="tabcontent">
     <h2>Assignment Progression</h2>
     <header>
       <h1>The progression of my assignments</h1>
     </header>
-    <main>
-      <h2>This is the start of my assignments, it's janky.</h2>
-      <p> This is a test page. Kind of, it became more like a diary of the progression of this site. </p>
-      <p>I tried to log everything I did while I progressed it. I guess it kind of worked. </p>
-      <p> Today is <strong>10/4/25</strong></p>
-      <p> I am using Visual Studio Code to make these since it's easier to read. Apparently the more spread out an HTML thing is, the larger the file becomes. But at least it's more legible.</p>
-      <header> Today is <strong>10/3/25</strong> </header>
-      <ul>
+    <div class="grid-2">
+      <section>
+        <h2>This is the start of my assignments, it's janky.</h2>
+        <p> This is a test page. Kind of, it became more like a diary of the progression of this site. </p>
+        <p>I tried to log everything I did while I progressed it. I guess it kind of worked. </p>
+        <p> Today is <strong>10/4/25</strong></p>
+        <p> I am using Visual Studio Code to make these since it's easier to read. Apparently the more spread out an HTML
+          thing is, the larger the file becomes. But at least it's more legible.</p>
+        <header> Today is <strong>10/3/25</strong> </header>
+        <ul>
           <li> Github took 5 minutes to redeploy my original edits.</li>
           <li> So I'm trying this to see if it'll redeploy</li>
           <li> If you're reading this it means that it decided to work.</li>
           <li> In which case... yippee.</li>
-      </ul>
-  
-      <img src="Suffering.jpg" alt="I'm not actually sure what happened here or why it took so long, I cancelled it and then tried again and I guess it was okay.">
-  
-      <p> This part of Week 3 assignment they wanted me to add an embed link so I used the song I was listening to at the time to link because I couldn't really think of anything else to add.</p>
-      <p> The song I had been listening to was Warcry by Chase Atlantic. Released on <strong>October 3rd, 2025</strong>. It had just come out at the time of writing this.</p>
-      <p>
-          <a href="https://youtu.be/w03hq-Ok1DE" target="_blank" rel="noopener noreferrer" title="Warcry by Chase Atlantic" aria-label="Warcry">
-          Open Warcry (Explicit) on YouTube
+        </ul>
+      </section>
+      <aside>
+        <img src="Suffering.jpg"
+          alt="I'm not actually sure what happened here or why it took so long, I cancelled it and then tried again and I guess it was okay.">
+
+        <p> This part of Week 3 assignment they wanted me to add an embed link so I used the song I was listening to at
+          the time to link because I couldn't really think of anything else to add.</p>
+        <p> The song I had been listening to was Warcry by Chase Atlantic. Released on <strong>October 3rd, 2025</strong>.
+          It had just come out at the time of writing this.</p>
+        <p>
+          <a href="https://youtu.be/w03hq-Ok1DE" target="_blank" rel="noopener noreferrer"
+            title="Warcry by Chase Atlantic" aria-label="Warcry">
+            Open Warcry (Explicit) on YouTube
           </a>
-      </p>
-    </main>
+        </p>
+      </aside>
+    </div>
 
-<p> Today is <strong>10/15/25</strong> And we're starting CSS. And stuff for our final project. So I changed a bunch of things.
+    <p> Today is <strong>10/15/25</strong> And we're starting CSS. And stuff for our final project. So I changed a bunch
+      of things.
 
-        <li> First of all, I made it multi tabbed for the final project work/other assignments with help the VSC copilot. I wanted it to be kind of a diary of sorts this page.</li>
-        <li> Then I used that code to make a base layout for the website. It's still pretty mid.</li>
-        <li> I actually changed the html file from the original index.html cause I forgot what I had done with it and figured it would just be easier to move it to a tab with the template I had made. </li>
-        <li> This failed and broke everything so I had to change it back. But it's fine now.</li>
-        <li> Edited some colors, moved the other stuff, deleted the old html. Hopefully github doesn't have a panic attack, turns out it did.</li>
-        <li> I added basic things and moved things to this tab and will have to go back and think of what stuff to fill the other ones with.</li>
-        <li> I have no idea where I'm supposed to use the stylesheet rather than the web.css file but I guess I'll figure it out at some point or just only use the web.css one.</li>
-      </p>
-  <p> <strong>10/21/25:</strong> We are unlucky and there was an AWS outage so Canvas was down on Monday 10/20/25 And then right before that, between 10/13/25 and 10/18/25 all of OC was down so we couldn't use Canvas then either. We're almost to midterms, unfortunate.</p>
+      <li> First of all, I made it multi tabbed for the final project work/other assignments with help the VSC copilot.
+        I wanted it to be kind of a diary of sorts this page.</li>
+      <li> Then I used that code to make a base layout for the website. It's still pretty mid.</li>
+      <li> I actually changed the html file from the original index.html cause I forgot what I had done with it and
+        figured it would just be easier to move it to a tab with the template I had made. </li>
+      <li> This failed and broke everything so I had to change it back. But it's fine now.</li>
+      <li> Edited some colors, moved the other stuff, deleted the old html. Hopefully github doesn't have a panic
+        attack, turns out it did.</li>
+      <li> I added basic things and moved things to this tab and will have to go back and think of what stuff to fill
+        the other ones with.</li>
+      <li> I have no idea where I'm supposed to use the stylesheet rather than the web.css file but I guess I'll figure
+        it out at some point or just only use the web.css one.</li>
+    </p>
+    <p> <strong>10/21/25:</strong> We are unlucky and there was an AWS outage so Canvas was down on Monday 10/20/25 And
+      then right before that, between 10/13/25 and 10/18/25 all of OC was down so we couldn't use Canvas then either.
+      We're almost to midterms, unfortunate.</p>
 
-  <p> <strong>10/23/25:</strong> I've made my fugly website thing kind of, it's hard to make because it physically hurts my eyes to look at. The problem with having multiple pages is that everything is cramped together.
-    I also have the memory retention of a goldfish. So I can't actually remember how to do anything. And my HTML file here is getting crowded and it's getting harder to read even like this.
-  </p>
-  <p> <strong>11/1/25:</strong> I am struggling with balancing everything, between my midterm and work and home life. I was at work all of yesterday and finally have a day off but I have a lot to do. I don't know what I was thinking. </p>
- <p> On Thursday, my mom got scammed by a person impersonating the new pastor at church through email. That was kind of rough cause I was taking my midterm when my mom realized it and she and my dad argued for a long time about it. I WARNED HER that it was suspicious.</p>
- <p> I need a nap.</p>
+    <p> <strong>10/23/25:</strong> I've made my fugly website thing kind of, it's hard to make because it physically
+      hurts my eyes to look at. The problem with having multiple pages is that everything is cramped together.
+      I also have the memory retention of a goldfish. So I can't actually remember how to do anything. And my HTML file
+      here is getting crowded and it's getting harder to read even like this.
+    </p>
+    <p> <strong>11/1/25:</strong> I am struggling with balancing everything, between my midterm and work and home life.
+      I was at work all of yesterday and finally have a day off but I have a lot to do. I don't know what I was
+      thinking. </p>
+    <p> On Thursday, my mom got scammed by a person impersonating the new pastor at church through email. That was kind
+      of rough cause I was taking my midterm when my mom realized it and she and my dad argued for a long time about it.
+      I WARNED HER that it was suspicious.</p>
+    <p> I need a nap.</p>
 
-<p> <strong>11/8/25:</strong> Okay, it's time to start on my final project template, like bare minimum for someone to be able to look at. I don't know what I'd write about, so we're just going to make this however my brain will let me.</p>
-<p> <strong>11/9/25:</strong> I made my basic template, I don't know if it's weird if I do my project like this. But I can't really think of anything else since my brain is just full of hyper fixations right now. I think it's just how my brain is coping so I don't have another meltdown.</p>
-<p> <strong>11/12/25:</strong> Adding a bit more and fixing the layout of my website before class. I slept most of yesterday and worked Monday so I haven't been able to get everything done.</p>
-</div>
- 
-    <footer>&copy; Copyright 2025 Kam.exe</footer>
+    <p> <strong>11/8/25:</strong> Okay, it's time to start on my final project template, like bare minimum for someone
+      to be able to look at. I don't know what I'd write about, so we're just going to make this however my brain will
+      let me.</p>
+    <p> <strong>11/9/25:</strong> I made my basic template, I don't know if it's weird if I do my project like this. But
+      I can't really think of anything else since my brain is just full of hyper fixations right now. I think it's just
+      how my brain is coping so I don't have another meltdown.</p>
+    <p> <strong>11/12/25:</strong> Adding a bit more and fixing the layout of my website before class. I slept most of
+      yesterday and worked Monday so I haven't been able to get everything done.</p>
+  </div>
+
+  <footer>&copy; Copyright 2025 Kam.exe</footer>
 
   <script>
     function openTab(evt, tabName) {
-      
+
       const tabcontent = document.getElementsByClassName("tabcontent");
       for (let i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
       }
 
-      
+
       const tablinks = document.getElementsByClassName("tablinks");
       for (let i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
       }
 
-      
+
       document.getElementById(tabName).style.display = "block";
       evt.currentTarget.className += " active";
     }
 
-    
+
     document.getElementById("defaultOpen").click();
 
-  
+
     const hyperfixationSelect = document.getElementById("hyperfixation-select");
     if (hyperfixationSelect) {
-      hyperfixationSelect.addEventListener("change", function() {
-      
+      hyperfixationSelect.addEventListener("change", function () {
+
         const contents = document.getElementsByClassName("hyperfixation-content");
         for (let i = 0; i < contents.length; i++) {
           contents[i].style.display = "none";
         }
-        
-     
+
+
         const selectedValue = this.value;
         if (selectedValue) {
           document.getElementById(selectedValue).style.display = "block";
@@ -164,4 +201,5 @@
   </script>
 
 </body>
+
 </html>

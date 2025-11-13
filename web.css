@@ -1,5 +1,6 @@
-
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -10,11 +11,12 @@ body {
 }
 
 
-ul, ol {
+ul,
+ol {
   text-align: left;
-  display: inline-block; 
+  display: inline-block;
   margin-left: 0;
-  padding-left: 1.2rem; 
+  padding-left: 1.2rem;
 }
 
 li {
@@ -48,21 +50,26 @@ p {
 }
 
 a {
-  color: #005fcc; 
+  color: #005fcc;
 }
 
 a:visited {
-  color: #4b0082; 
+  color: #4b0082;
 }
 
 a:hover,
 a:focus {
-  color: #003a80; 
+  color: #003a80;
   text-decoration: underline;
 }
 
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   color: #000;
 }
@@ -72,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Arial, sans-serif;
 
   margin: clamp(12px, 4vw, 40px);
-  background: #7d7d7d;
+  background: #bcbaba;
 }
 
 
@@ -85,13 +92,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .tab button {
-  background-color: #8759c3;
+  background-color: #c7c6c8;
   border: none;
   outline: none;
   cursor: pointer;
   padding: 10px 20px;
   transition: 0.3s;
-  flex: 0 1 auto; 
+  flex: 0 1 auto;
 }
 
 .tab button:hover {
@@ -99,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .tab button.active {
-  background-color: #ccc;
+  background-color: #de9bdf;
 }
 
 .tabcontent {
@@ -112,7 +119,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Make media responsive */
-img, video {
+img,
+video {
   max-width: 100%;
   height: auto;
   display: block;
@@ -162,7 +170,7 @@ iframe {
 }
 
 [id="Current Hyperfixations"] select option {
-  background-color: #959191;
+  background-color: #515151;
   color: #000000;
 }
 
@@ -179,5 +187,30 @@ iframe {
   text-decoration: underline;
 }
 
+/* ---- Layout helpers (Flex & Grid) ---- */
+.flex-row { display: flex; gap: 12px; align-items: center; }
+.flex-between { display: flex; justify-content: space-between; align-items: center; }
+.flex-wrap { flex-wrap: wrap; }
 
+/* Two-column content area that collapses on mobile */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: clamp(12px, 2.5vw, 24px);
+}
+@media (max-width: 800px) {
+  .grid-2 { grid-template-columns: 1fr; }
+}
 
+/* Simple responsive card grid */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+.card {
+  background: #fff;
+  border: 1px solid #00000020;
+  border-radius: 8px;
+  padding: 12px;
+}
