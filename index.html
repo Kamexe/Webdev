@@ -5,15 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Webpage Thing</title>
   <link rel="stylesheet" href="web.css">
+  <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
+.charm-title {
+  font-family: 'Charm', cursive;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+</style>
 </head>
 <body class="page-website">
 
-  <h1>CIS 155 - Website Project
+  <h1 class="charm-title">CIS 155 - Website Project
   </h1>
 
   <div class="tab">
-    <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
-    <button class="tablinks" onclick="openTab(event, 'Current Hyperfixations')">Hyperfixations</button>
+    <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">
+      <i class="fa-solid fa-house"></i> Home
+    </button>
+    <button class="tablinks" onclick="openTab(event, 'Current Hyperfixations')">
+      <i class="fa-solid fa-computer"></i> Hyperfixations
+    </button>
     <button class="tablinks" onclick="openTab(event, 'Assignment Progression')" id="tab-assignment">Assignment Progression</button>
   </div>
 
