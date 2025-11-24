@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .tab button {
-  background-color: #9107a4;
+  background-color: #e66bf6;
   border: none;
   outline: none;
   cursor: pointer;
@@ -207,5 +207,34 @@ iframe {
 }
 @media (max-width: 800px) {
   .grid-2 { grid-template-columns: 1fr; }
+}
+
+
+/* Table Styling */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #555;
+  color: #fff;
+}
+
+td:nth-child(even) {
+  background-color: #ddd;
+}
+
+td:nth-child(odd) {
+  background-color: #eee;
 }
 
