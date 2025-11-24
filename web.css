@@ -71,7 +71,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Arial, sans-serif;
 
   margin: clamp(12px, 4vw, 40px);
-  background: #afadad;
+  background: url('Greydiant.jpg') center/cover no-repeat fixed;
+  background-color: #afadad;
 }
 
 
@@ -84,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .tab button {
-  background-color: #e66bf6;
+  background-color: #eda6dd;
   border: none;
   outline: none;
   cursor: pointer;
@@ -98,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .tab button.active {
-  background-color: #ffb8ee;
+  background-color: #0067a6;
 }
 
 
@@ -193,6 +194,27 @@ iframe {
   border-radius: 4px;
 }
 
+[id="chase-atlantic"] {
+  background: url('Empty.jpg') center/cover no-repeat;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+[id="chase-atlantic"] header,
+[id="chase-atlantic"] p {
+  background-color: rgba(191, 191, 191, 0.85);
+  padding: 8px 12px;
+  border-radius: 4px;
+  display: inline-block;
+  width: auto;
+}
+
+[id="chase-atlantic"] header {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+}
+
 [id="Current Hyperfixations"] a:hover,
 [id="Current Hyperfixations"] a:focus {
   color: #4982c8;
@@ -220,21 +242,21 @@ table {
 
 th,
 td {
-  border: 1px solid #ccc;
+  border: 1px solid #7b7878;
   padding: 10px;
   text-align: center;
 }
 
 th {
-  background-color: #555;
+  background-color: #646464;
   color: #fff;
 }
 
 td:nth-child(even) {
-  background-color: #ddd;
+  background-color: #949494;
 }
 
 td:nth-child(odd) {
-  background-color: #eee;
+  background-color: #bbbbbb;
 }
 
