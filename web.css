@@ -143,6 +143,19 @@ iframe {
   max-width: 100%;
 }
 
+/* Responsive video embeds */
+.video-wrapper {
+  max-width: 800px;
+  margin: 1rem auto;
+}
+.video-wrapper iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  display: block;
+  border: 0;
+}
+
 /*fluid*/
 @media (max-width: 600px) {
   .tab button {
